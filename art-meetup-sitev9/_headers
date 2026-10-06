@@ -1,0 +1,8 @@
+/*
+  Content-Security-Policy: default-src 'none'; img-src 'self'; font-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; frame-src https://guestbooks.meadow.cafe; base-uri 'none'; form-action 'none'; frame-ancestors 'none'
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/fonts/*
+  Access-Control-Allow-Origin: https://guestbooks.meadow.cafe

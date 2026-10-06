@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; font-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>This month · Local Art Meetup</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/main.js"></script>
+  <script src="oneko.js" defer></script>
+</head>
+<body data-p="index">
+  <main>
+    <noscript><p class="scrap">The menu needs JavaScript. <a href="index.html">Home</a></p></noscript>
+    <div data-include="header"></div>
+    <h1>This month</h1>
+    <section class="hero">
+      <img id="poster" alt="This month's event poster">
+      <div id="info"></div>
+    </section>
+    <h2>On the board</h2>
+    <div id="pins" class="board"></div>
+    <p><a href="notices.html">See every pin</a></p>
+  </main>
+  <div data-include="footer"></div>
+</body>
+</html>

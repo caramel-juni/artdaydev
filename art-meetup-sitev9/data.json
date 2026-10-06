@@ -1,0 +1,74 @@
+{
+ "event": {
+  "title": "Art Day: October!",
+  "date": "First Saturday, 2pm",
+  "place": "Richards Park, Osmond Terrace, Norwood 5067",
+  "details": "Bring projects, a spark of creativity, friends, and a plate of food to share (if you'd like!). Art supplies & materials provided.",
+  "poster": "img/artday-oct.webp"
+ },
+ "pins": [
+  {
+   "type": "callout",
+   "title": "Zine collaborators wanted",
+   "by": "Sam",
+   "body": "Making a zine about local laneways. Need illustrators and writers!"
+  },
+  {
+   "type": "showcase",
+   "title": "Linocut series: Trams",
+   "by": "Jo",
+   "body": "Six prints, hand-carved, on show at the cafe until the 20th."
+  },
+  {
+   "type": "callout",
+   "title": "Free paper offcuts",
+   "by": "Priya",
+   "body": "Print shop clear-out. Pick up at the next meetup."
+  }
+ ],
+ "artists": [
+  {
+   "name": "Jo K.",
+   "medium": "Linocut",
+   "added": "2026-01-10",
+   "img": "",
+   "blurb": "Carves trams and tea."
+  },
+  {
+   "name": "Sam R.",
+   "medium": "Zines",
+   "added": "2026-03-02",
+   "img": "",
+   "blurb": "Cut, paste, staple."
+  },
+  {
+   "name": "Priya N.",
+   "medium": "Textile collage",
+   "added": "2026-05-21",
+   "img": "",
+   "blurb": "Thread as line."
+  }
+ ],
+ "archive": [
+  {
+   "date": "2026-09-05",
+   "title": "Print Swap",
+   "note": "Swapped linocuts and traded stories.",
+   "photos": [
+    "img/photo1.svg",
+    "img/photo2.svg",
+    "img/photo3.svg"
+   ]
+  },
+  {
+   "date": "2026-08-01",
+   "title": "Sketch Walk",
+   "note": "Sketchbooks out along the river.",
+   "photos": [
+    "img/photo1.svg",
+    "img/photo2.svg"
+   ]
+  }
+ ],
+ "contact": "hello@example.org"
+}

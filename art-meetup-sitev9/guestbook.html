@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; font-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'; frame-src https://guestbooks.meadow.cafe">
+  <title>Guestbook · Local Art Meetup</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/main.js"></script>
+  <script src="oneko.js" defer></script>
+</head>
+<body data-p="guestbook">
+  <main>
+    <noscript><p class="scrap">The menu needs JavaScript. <a href="index.html">Home</a></p></noscript>
+    <div data-include="header"></div>
+    <h1>Guestbook</h1>
+    <p class="scrap">Leave us a note, a doodle-in-words, or just say you stopped by.</p>
+    <!-- GUESTBOOK: create a guestbook at guestbooks.meadow.cafe, click "Get embed code", choose the iframe
+         version, and paste its URL into src below (see GUIDE.md section 10). Keep the sandbox attribute. -->
+    <div class="gbwrap">
+    <iframe class="gb" title="Guestbook" src="about:blank" loading="lazy" referrerpolicy="no-referrer"
+            sandbox="allow-scripts allow-forms allow-same-origin allow-popups"></iframe>
+    </div>
+  </main>
+  <div data-include="footer"></div>
+</body>
+</html>

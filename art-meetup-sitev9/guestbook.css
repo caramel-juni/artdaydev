@@ -1,0 +1,59 @@
+/* GUESTBOOK PAPER THEME
+   The guestbook lives in an iframe on guestbooks.meadow.cafe, so style.css can't reach it.
+   Paste this whole file into your guestbook's custom CSS box in the Guestbooks dashboard.
+   Fonts load from YOUR site (https only): change artdayadl.com below if your domain differs. */
+@font-face{font-family:Gaegu;src:url(https://artdayadl.com/fonts/gaegu.woff2) format("woff2");font-display:swap}
+@font-face{font-family:"Indie Flower";src:url(https://artdayadl.com/fonts/indie-flower.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Typed;src:url(https://artdayadl.com/fonts/special-elite.woff2) format("woff2");font-display:swap}
+
+/* same variable idea as style.css: change a look once, here */
+:root{color-scheme:light;--ink:#2b2118;--paper:#fdfaf0;--rule:#9cc3dd;--red:#d9402b;--yellow:#f2c14e;--desk:#d8cdb4;--line:2rem;
+ --f-hand:Gaegu,"Segoe Print","Bradley Hand","Comic Sans MS",cursive;--f-head:"Indie Flower","Segoe Print","Bradley Hand","Comic Sans MS",cursive;--f-type:Typed,"Courier New",monospace}
+
+/* the desk the paper lies on (matches the page behind the iframe) */
+html body{margin:0;padding:1rem;background:var(--desk);color:var(--ink);font:1.35rem/var(--line) var(--f-hand)}
+html body a{color:#2e6f9e}
+
+/* .container casts the shadow; main is the torn, ruled sheet with a red margin line and punched holes */
+html body .container{max-width:42rem;margin:1rem auto 2rem;filter:drop-shadow(3px 5px 0 #0004)}
+html body main{padding:1.5rem 2rem 3rem 4.5rem;
+ background:
+  radial-gradient(circle at 1.4rem 12%,var(--desk) .55rem,#0000 .6rem),
+  radial-gradient(circle at 1.4rem 50%,var(--desk) .55rem,#0000 .6rem),
+  radial-gradient(circle at 1.4rem 88%,var(--desk) .55rem,#0000 .6rem),
+  linear-gradient(90deg,#0000 3.4rem,#d9402b88 3.4rem 3.5rem,#0000 3.5rem),
+  repeating-linear-gradient(var(--paper) 0 calc(var(--line) - 1px),var(--rule) calc(var(--line) - 1px) var(--line));
+ clip-path:polygon(0 0,100% 0,100% 98.5%,96% 99.6%,90% 98.6%,84% 100%,76% 98.7%,68% 100%,58% 98.7%,50% 100%,40% 98.7%,30% 100%,20% 98.7%,10% 100%,4% 98.8%,0 99.6%)}
+
+html body h1{display:inline-block;margin:0 0 1rem;padding:0 .4rem;font:2rem/1.3 var(--f-head);overflow-wrap:anywhere;transform:rotate(-1.5deg);
+ background:linear-gradient(transparent 60%,#f2c14e99 60%)}
+html body h3{font:1.8rem/var(--line) var(--f-head);margin:0}
+
+/* form: labels typed, answers handwritten on a pen line */
+html body label{display:block;font:.9rem/1.2 var(--f-type);text-transform:uppercase;letter-spacing:.05em}
+html body .guestbooks___input-container{margin:0 0 1rem}
+html body input:not([type=checkbox]):not([type=submit]),html body textarea{width:100%;box-sizing:border-box;padding:.1rem .3rem;
+ font:inherit;color:var(--ink);background:transparent;border:0;border-bottom:2px solid var(--ink);border-radius:0;outline:none}
+html body textarea{background:#fff6;border:2px dashed #2b211888;min-height:8rem}
+html body input:focus,html body textarea:focus{background:#f2c14e44}
+html body ::placeholder{color:#2b211877}
+
+/* "I'm not a robot" = rubber stamp */
+html body .guestbooks___pow-checkbox-label{display:inline-flex;align-items:center;gap:.5rem;padding:.2rem .8rem;cursor:pointer;
+ font:1rem/1.4 var(--f-type);text-transform:uppercase;color:var(--red);border:3px double var(--red);transform:rotate(-2deg)}
+
+/* buttons = sticky notes */
+html body input[type=submit],html body button{font:1.3rem/1.4 var(--f-head);color:var(--ink);background:var(--yellow);
+ border:0;border-radius:0;padding:.3rem 1.4rem;box-shadow:3px 4px 0 #0005;transform:rotate(1.5deg);cursor:pointer}
+html body input[type=submit]:hover,html body button:hover{transform:rotate(0) scale(1.05)}
+html body input[type=submit]:disabled{opacity:.5;cursor:not-allowed}
+html body #guestbooks___error-message,html body #guestbooks___success-message{margin-top:.6rem;padding:.3rem .6rem;
+ font:1rem/1.4 var(--f-type);border-left:4px solid var(--red);background:#d9402b22}
+html body #guestbooks___guestbook-made-with{font:.85rem/1.4 var(--f-type)}
+html body hr{border:0;border-top:3px dashed #0006;margin:1.5rem 0}
+
+/* each message is a pinned scrap; the "no messages" line becomes the first note */
+html body #guestbooks___guestbook-messages-container>*{margin:1rem 0;padding:.6rem 1rem;line-height:1.4;background:#fff176;box-shadow:2px 3px 0 #0003}
+html body #guestbooks___guestbook-messages-container>*:nth-child(3n+2){background:#fbb6cb;transform:rotate(1deg)}
+html body #guestbooks___guestbook-messages-container>*:nth-child(3n){background:#cfe8d5;transform:rotate(-1deg)}
+html body #guestbooks___guestbook-messages-container p{margin:0}

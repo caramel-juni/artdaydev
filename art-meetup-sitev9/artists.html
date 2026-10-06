@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; font-src 'self'; media-src 'self'; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Artist wall · Local Art Meetup</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="js/main.js"></script>
+  <script src="oneko.js" defer></script>
+</head>
+<body data-p="artists">
+  <main>
+    <noscript><p class="scrap">The menu needs JavaScript. <a href="index.html">Home</a></p></noscript>
+    <div data-include="header"></div>
+    <h1>Artist wall</h1>
+    <p><button id="shuffle" type="button">Randomise</button> <button id="order" type="button">Oldest first</button></p>
+    <div id="wall"></div>
+  </main>
+  <div data-include="footer"></div>
+</body>
+</html>
