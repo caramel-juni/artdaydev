@@ -9,51 +9,51 @@
  "pins": [
   {
    "type": "callout",
-   "title": "Zine collaborators wanted",
-   "by": "Sam",
-   "body": "Making a zine about local laneways. Need illustrators and writers!"
+   "title": "sample community noticeboard title",
+   "by": "Juni",
+   "body": "Looking to do some cool art with cool people :D !"
   },
   {
    "type": "showcase",
-   "title": "Linocut series: Trams",
-   "by": "Jo",
-   "body": "Six prints, hand-carved, on show at the cafe until the 20th."
+   "title": "sample community noticeboard title 2",
+   "by": "juni",
+   "body": "Looking to do some cool art with cool people......!!!!"
   },
   {
    "type": "callout",
-   "title": "Free paper offcuts",
-   "by": "Priya",
-   "body": "Print shop clear-out. Pick up at the next meetup."
+   "title": "Click meeeeeee",
+   "by": "juniiiii",
+   "body": "I should think of something more original here"
   }
  ],
  "artists": [
   {
-   "name": "Jo K.",
+   "name": "Juni",
    "medium": "Linocut",
    "added": "2026-01-10",
    "img": "",
-   "blurb": "Carves trams and tea."
+   "blurb": "Craves caramel slice and tea."
   },
   {
-   "name": "Sam R.",
+   "name": "Liz",
    "medium": "Zines",
    "added": "2026-03-02",
    "img": "",
-   "blurb": "Cut, paste, staple."
+   "blurb": "A beautiful human bean <3."
   },
   {
-   "name": "Priya N.",
+   "name": "Zanny",
    "medium": "Textile collage",
    "added": "2026-05-21",
    "img": "",
-   "blurb": "Thread as line."
+   "blurb": "A beautiful human bean <3."
   }
  ],
  "archive": [
   {
    "date": "2026-09-05",
-   "title": "Print Swap",
-   "note": "Swapped linocuts and traded stories.",
+   "title": "Art Days September!",
+   "note": "note here!.",
    "photos": [
     "img/photo1.svg",
     "img/photo2.svg",
@@ -62,13 +62,13 @@
   },
   {
    "date": "2026-08-01",
-   "title": "Sketch Walk",
-   "note": "Sketchbooks out along the river.",
+   "title": "Art Days October!",
+   "note": "note here!.",
    "photos": [
     "img/photo1.svg",
     "img/photo2.svg"
    ]
   }
  ],
- "contact": "hello@example.org"
+ "contact": "info@artdayadl.com"
 }

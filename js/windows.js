@@ -64,11 +64,11 @@ function enableDrag(frame, handle) {
 export function makeDesk(desk) {
   const icons = el('div', 'icons');
   const bar = el('div', 'bar');
-  const start = el('button', '', '⊞ Start');
+  const start = el('button', '', '⊞ (re)Start');
   start.onclick = () => {
     const restart = el('button', '', 'Restart');
     restart.onclick = () => location.reload();
-    win(desk, 'Shut Down Windows', [el('p', '', 'It is now safe to turn off your computer.'), restart], { x: 140, y: 80, w: 260 });
+    win(desk, 'Restart?', [el('p', '', '... are you sure about that?'), restart], { x: 140, y: 80, w: 260 });
   };
   bar.append(start);
   desk.append(icons, bar);
